@@ -17,7 +17,9 @@ struct FocusStateWithModifier: View {
             
             Divider()
             
-            FocusPrinter(model: model.focus, view: focus)
+            // Change the argument to use `model.focus` and the bind fails
+            OneWayFocusPrinter(focus: focus)
+//            FocusPrinter(model: model.focus, view: focus)
         }
         .frame(maxWidth: 200)
         .padding()

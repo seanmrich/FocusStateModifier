@@ -17,6 +17,8 @@
 		14E76CDB293E7F7700BF59FC /* WithState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CDA293E7F7700BF59FC /* WithState.swift */; };
 		14E76CDD293E80D400BF59FC /* FocusStateWithModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CDC293E80D400BF59FC /* FocusStateWithModifier.swift */; };
 		14E76CE2293E83AE00BF59FC /* BindingWithModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CE1293E83AE00BF59FC /* BindingWithModifier.swift */; };
+		14E76CEA293E8BDB00BF59FC /* OneWayFocusPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CE9293E8BDB00BF59FC /* OneWayFocusPrinter.swift */; };
+		14E76CED293E90D800BF59FC /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 14E76CEC293E90D800BF59FC /* SwiftUINavigation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,7 @@
 		14E76CDA293E7F7700BF59FC /* WithState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithState.swift; sourceTree = "<group>"; };
 		14E76CDC293E80D400BF59FC /* FocusStateWithModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateWithModifier.swift; sourceTree = "<group>"; };
 		14E76CE1293E83AE00BF59FC /* BindingWithModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingWithModifier.swift; sourceTree = "<group>"; };
+		14E76CE9293E8BDB00BF59FC /* OneWayFocusPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayFocusPrinter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14E76CED293E90D800BF59FC /* SwiftUINavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +75,7 @@
 				14E76CE1293E83AE00BF59FC /* BindingWithModifier.swift */,
 				14E76CD6293E7D4E00BF59FC /* Model.swift */,
 				14E76CD8293E7DB100BF59FC /* FocusPrinter.swift */,
+				14E76CE9293E8BDB00BF59FC /* OneWayFocusPrinter.swift */,
 				14E76CDA293E7F7700BF59FC /* WithState.swift */,
 				14E76CC9293E7CEE00BF59FC /* Assets.xcassets */,
 				14E76CCE293E7CEE00BF59FC /* FocusStateModifier.entitlements */,
@@ -104,6 +109,7 @@
 			);
 			name = FocusStateModifier;
 			packageProductDependencies = (
+				14E76CEC293E90D800BF59FC /* SwiftUINavigation */,
 			);
 			productName = FocusStateModifier;
 			productReference = 14E76CC2293E7CED00BF59FC /* FocusStateModifier.app */;
@@ -134,6 +140,7 @@
 			);
 			mainGroup = 14E76CB9293E7CED00BF59FC;
 			packageReferences = (
+				14E76CEB293E90D800BF59FC /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
 			);
 			productRefGroup = 14E76CC3293E7CED00BF59FC /* Products */;
 			projectDirPath = "";
@@ -164,6 +171,7 @@
 				14E76CC8293E7CED00BF59FC /* ContentView.swift in Sources */,
 				14E76CDB293E7F7700BF59FC /* WithState.swift in Sources */,
 				14E76CE2293E83AE00BF59FC /* BindingWithModifier.swift in Sources */,
+				14E76CEA293E8BDB00BF59FC /* OneWayFocusPrinter.swift in Sources */,
 				14E76CD9293E7DB100BF59FC /* FocusPrinter.swift in Sources */,
 				14E76CD5293E7D2700BF59FC /* FocusStateNoModifier.swift in Sources */,
 				14E76CDD293E80D400BF59FC /* FocusStateWithModifier.swift in Sources */,
@@ -364,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		14E76CEB293E90D800BF59FC /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		14E76CEC293E90D800BF59FC /* SwiftUINavigation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 14E76CEB293E90D800BF59FC /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
+			productName = SwiftUINavigation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14E76CBA293E7CED00BF59FC /* Project object */;
 }
