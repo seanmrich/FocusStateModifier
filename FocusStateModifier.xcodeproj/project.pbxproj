@@ -11,6 +11,12 @@
 		14E76CC8293E7CED00BF59FC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CC7293E7CED00BF59FC /* ContentView.swift */; };
 		14E76CCA293E7CEE00BF59FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E76CC9293E7CEE00BF59FC /* Assets.xcassets */; };
 		14E76CCD293E7CEE00BF59FC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E76CCC293E7CEE00BF59FC /* Preview Assets.xcassets */; };
+		14E76CD5293E7D2700BF59FC /* FocusStateNoModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CD4293E7D2700BF59FC /* FocusStateNoModifier.swift */; };
+		14E76CD7293E7D4E00BF59FC /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CD6293E7D4E00BF59FC /* Model.swift */; };
+		14E76CD9293E7DB100BF59FC /* FocusPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CD8293E7DB100BF59FC /* FocusPrinter.swift */; };
+		14E76CDB293E7F7700BF59FC /* WithState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CDA293E7F7700BF59FC /* WithState.swift */; };
+		14E76CDD293E80D400BF59FC /* FocusStateWithModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CDC293E80D400BF59FC /* FocusStateWithModifier.swift */; };
+		14E76CE2293E83AE00BF59FC /* BindingWithModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CE1293E83AE00BF59FC /* BindingWithModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +26,12 @@
 		14E76CC9293E7CEE00BF59FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14E76CCC293E7CEE00BF59FC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		14E76CCE293E7CEE00BF59FC /* FocusStateModifier.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FocusStateModifier.entitlements; sourceTree = "<group>"; };
+		14E76CD4293E7D2700BF59FC /* FocusStateNoModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateNoModifier.swift; sourceTree = "<group>"; };
+		14E76CD6293E7D4E00BF59FC /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		14E76CD8293E7DB100BF59FC /* FocusPrinter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusPrinter.swift; sourceTree = "<group>"; };
+		14E76CDA293E7F7700BF59FC /* WithState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WithState.swift; sourceTree = "<group>"; };
+		14E76CDC293E80D400BF59FC /* FocusStateWithModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FocusStateWithModifier.swift; sourceTree = "<group>"; };
+		14E76CE1293E83AE00BF59FC /* BindingWithModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingWithModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,12 @@
 			children = (
 				14E76CC5293E7CED00BF59FC /* FocusStateModifierApp.swift */,
 				14E76CC7293E7CED00BF59FC /* ContentView.swift */,
+				14E76CD4293E7D2700BF59FC /* FocusStateNoModifier.swift */,
+				14E76CDC293E80D400BF59FC /* FocusStateWithModifier.swift */,
+				14E76CE1293E83AE00BF59FC /* BindingWithModifier.swift */,
+				14E76CD6293E7D4E00BF59FC /* Model.swift */,
+				14E76CD8293E7DB100BF59FC /* FocusPrinter.swift */,
+				14E76CDA293E7F7700BF59FC /* WithState.swift */,
 				14E76CC9293E7CEE00BF59FC /* Assets.xcassets */,
 				14E76CCE293E7CEE00BF59FC /* FocusStateModifier.entitlements */,
 				14E76CCB293E7CEE00BF59FC /* Preview Content */,
@@ -85,6 +103,8 @@
 			dependencies = (
 			);
 			name = FocusStateModifier;
+			packageProductDependencies = (
+			);
 			productName = FocusStateModifier;
 			productReference = 14E76CC2293E7CED00BF59FC /* FocusStateModifier.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +133,8 @@
 				Base,
 			);
 			mainGroup = 14E76CB9293E7CED00BF59FC;
+			packageReferences = (
+			);
 			productRefGroup = 14E76CC3293E7CED00BF59FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -140,7 +162,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				14E76CC8293E7CED00BF59FC /* ContentView.swift in Sources */,
+				14E76CDB293E7F7700BF59FC /* WithState.swift in Sources */,
+				14E76CE2293E83AE00BF59FC /* BindingWithModifier.swift in Sources */,
+				14E76CD9293E7DB100BF59FC /* FocusPrinter.swift in Sources */,
+				14E76CD5293E7D2700BF59FC /* FocusStateNoModifier.swift in Sources */,
+				14E76CDD293E80D400BF59FC /* FocusStateWithModifier.swift in Sources */,
 				14E76CC6293E7CED00BF59FC /* FocusStateModifierApp.swift in Sources */,
+				14E76CD7293E7D4E00BF59FC /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

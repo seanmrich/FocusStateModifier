@@ -1,26 +1,21 @@
-//
-//  ContentView.swift
-//  FocusStateModifier
-//
-//  Created by Sean Rich on 12/5/22.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject private var focusStateNoModifierModel = Model()
+    @StateObject private var focusStateWithModifierModel = Model()
+    @StateObject private var bindingWithModifierModel = Model()
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+        TabView {
+            FocusStateNoModifier(model: focusStateNoModifierModel)
+                .tabItem { Text("FocusState No Modifier") }
+            
+            FocusStateWithModifier(model: focusStateWithModifierModel)
+                .tabItem { Text("FocusState With Modifier") }
+            
+            BindingWithModifier(model: bindingWithModifierModel)
+                .tabItem { Text("Binding With Modifier") }
         }
         .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }
