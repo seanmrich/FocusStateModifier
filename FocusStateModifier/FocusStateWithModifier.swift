@@ -1,5 +1,4 @@
 import SwiftUI
-import SwiftUINavigation
 
 struct FocusStateWithModifier: View {
     @ObservedObject var model: Model
@@ -19,6 +18,7 @@ struct FocusStateWithModifier: View {
             
             // Change the argument to use `model.focus` and the bind fails
             OneWayFocusPrinter(focus: focus)
+            // Displaying both model and view focus values also works correctly
 //            FocusPrinter(model: model.focus, view: focus)
         }
         .frame(maxWidth: 200)

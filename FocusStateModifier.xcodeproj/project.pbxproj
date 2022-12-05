@@ -18,7 +18,6 @@
 		14E76CDD293E80D400BF59FC /* FocusStateWithModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CDC293E80D400BF59FC /* FocusStateWithModifier.swift */; };
 		14E76CE2293E83AE00BF59FC /* BindingWithModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CE1293E83AE00BF59FC /* BindingWithModifier.swift */; };
 		14E76CEA293E8BDB00BF59FC /* OneWayFocusPrinter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E76CE9293E8BDB00BF59FC /* OneWayFocusPrinter.swift */; };
-		14E76CED293E90D800BF59FC /* SwiftUINavigation in Frameworks */ = {isa = PBXBuildFile; productRef = 14E76CEC293E90D800BF59FC /* SwiftUINavigation */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				14E76CED293E90D800BF59FC /* SwiftUINavigation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,7 +107,6 @@
 			);
 			name = FocusStateModifier;
 			packageProductDependencies = (
-				14E76CEC293E90D800BF59FC /* SwiftUINavigation */,
 			);
 			productName = FocusStateModifier;
 			productReference = 14E76CC2293E7CED00BF59FC /* FocusStateModifier.app */;
@@ -140,7 +137,6 @@
 			);
 			mainGroup = 14E76CB9293E7CED00BF59FC;
 			packageReferences = (
-				14E76CEB293E90D800BF59FC /* XCRemoteSwiftPackageReference "swiftui-navigation" */,
 			);
 			productRefGroup = 14E76CC3293E7CED00BF59FC /* Products */;
 			projectDirPath = "";
@@ -372,25 +368,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		14E76CEB293E90D800BF59FC /* XCRemoteSwiftPackageReference "swiftui-navigation" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/pointfreeco/swiftui-navigation.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		14E76CEC293E90D800BF59FC /* SwiftUINavigation */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 14E76CEB293E90D800BF59FC /* XCRemoteSwiftPackageReference "swiftui-navigation" */;
-			productName = SwiftUINavigation;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 14E76CBA293E7CED00BF59FC /* Project object */;
 }
